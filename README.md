@@ -1,1 +1,1 @@
-# Chatbot-Project-in-Prolog
+# Chatbot project in Prolog
