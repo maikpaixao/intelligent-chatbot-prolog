@@ -21,7 +21,6 @@ presidente :- write('Ola! Eu sou o Bot-3000, atual presidente da republica.'), n
 
 remove([], List, List).
 remove([H|T], List2, [H|Result]) :- remove(T, List2, Result).
-/* Consegui fazer o if para o voce sabia!!! */
 
 conversar(['tchau']) :- reponder(['Ate a proxima!']).
 conversar :- nl, write('Escreva: '), read_atomics(Input), conversar(Input), !.
@@ -35,7 +34,7 @@ conversar(Dados) :- (write(Dados), casar(['voce', 'sabia', _|_], Dicionario, Dad
 					Lista = [X,Y,Z|R],
 					remove(E, [_], R),
 					write(E),
-					escrever(aaa, c),
+					escrever('Sim, eu sabia que ', R),
 					write('Presidente: '), reponder(Saida), !, conversar
 					;
 					write('perdeu\n'),
@@ -57,16 +56,29 @@ consultar(Index, [(Index, Valor)|_], Valor).
 consultar(Index, [(Index1, _)|Dicionario], Valor) :- \=(Index, Index1), consultar(Key, Dicionario, Valor).
 
 escrever(Texto, R) :-
+		remove(E, [_], R),
+		atomic_list_concat(R, ',', A),
+		atomic_list_concat(E, ' ', B),
         append('bancoPadroes.pl'),
-		atom_concat('\npadrao([voce,sabia,', R, X),
+		
+		atom_concat('\npadrao([voce,sabia,', A, X),
         atom_concat(X , '],[''', Z),
 		atom_concat(Z, Texto, K),
-        atom_concat(K, ''']).', L),
-        write(L),
-        told.
+		atom_concat(K, B, H),
+        atom_concat(H, '.'']).', L),
+		write(L),
 
-compare_list([],[]).
-compare_list([],_).
-compare_list([L1Head|L1Tail], List2):-
-    			member(L1Head, List2),
-    			compare_list(L1Tail, List2).
+		atom_concat('\npadrao([voce,sabia,', B, S),
+        atom_concat(S , ', _|_],[''', U),
+		atom_concat(U, Texto, P),
+		atom_concat(P, B, F),
+        atom_concat(F, '.'']).', V),
+        write(V),
+
+		atom_concat('\npadrao([voce,sabia,', B, Y),
+        atom_concat(Y , ', _],[''', W),
+		atom_concat(W, Texto, D),
+		atom_concat(D, B, C),
+        atom_concat(C, '.'']).', M),
+        write(M),
+        told.

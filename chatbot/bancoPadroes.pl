@@ -61,7 +61,3 @@ padrao([me, fala, sobre, a, importancia, dos, aeroportos, no, brasil, _|_],
         guardando informação no banco de padroes. */
 
 padrao([voce,sabia,_|_],['Sabia nao.']).
-padrao([voce,sabia,c],['aaa']).
-padrao([voce,sabia,c],['aaa']).
-padrao([voce,sabia,c],['aaa']).
-padrao([voce,sabia,c],['aaa']).
