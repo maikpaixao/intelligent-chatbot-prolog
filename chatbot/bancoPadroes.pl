@@ -19,13 +19,13 @@ padrao([o, que, voce, acha, de, mulheres, gerindo, negocios, _|_],
 		['A mulher abre o negócio, tem seus filhos, cria os filhos e se sustenta, tudo isso abrindo o negócio']).
 
 padrao([o, quao, importante, e, o, dia, das, criancas],
-		['Se hoje é o dia das crianças, ontem eu disse que criança o dia da criança é dia da mãe,
-		do pai e das professoras, mas também é o dia dos animais, sempre que você olha uma criança,
-		há sempre uma figura oculta, que é um cachorro atrás.']).
+		['Se hoje e o dia das criancas, ontem eu disse que criancas o dia da criança e dia da mae,
+		do pai e das professoras, mas tambem e o dia dos animais, sempre que você olha uma crianca,
+		há sempre uma figura oculta, que e um cachorro atras.']).
 padrao([o, quao, importante, e, o, dia, das, criancas, _|_],
-		['Se hoje é o dia das crianças, ontem eu disse que criança o dia da criança é dia da mãe,
-		do pai e das professoras, mas também é o dia dos animais, sempre que você olha uma criança,
-		há sempre uma figura oculta, que é um cachorro atrás.']).
+		['Se hoje e o dia das criancas, ontem eu disse que criancas o dia da criança e dia da mae,
+		do pai e das professoras, mas tambem e o dia dos animais, sempre que você olha uma crianca,
+		há sempre uma figura oculta, que e um cachorro atras.']).
 
 padrao([qual, o, seu, relacionamento, com, os prefeitos, das, cidades, brasileiras],
 		['Eu sempre escuto os prefeitos. Por que é que eu escuto os prefeitos?
@@ -42,10 +42,6 @@ padrao([voce, acredita, mesmo, no, et, de, varginha, _|_],
 		['Primeiro, eu queria te dizer que eu tenho muito respeito pelo ET de Varginha.
 		E eu sei que aqui, quem não viu conhece alguém que viu, ou tem alguém na família que viu,
 		mas de qualquer jeito eu começo dizendo que esse respeito pelo ET de Varginha está garantido.']).
-
-padrao([o, voce, planeja, fazer, para, reduzir, a, emissao, de, co2, na, atmosfera, _|_],[]).
-padrao([como, o, seu, governo, trata, a, questao, da, legalização, da, maconha, _|_],[]).
-padrao([o, que, voce, tem, a, falar, sobre, a, legalizacao, do, aborto, _|_],[]).
 
 padrao([me, fala, sobre, a, autossuficiencia, do, brasil],
 		['A autossuficiencia do Brasil sempre foi insuficiente.']).
@@ -66,4 +62,14 @@ padrao([me, fala, sobre, a, importancia, dos, aeroportos, no, brasil, _|_],
 padrao([voce,sabia, que, Artigo, Substantivo, Verbo, _|_],['É mesmo? Não sabia!.']) :- artigo(Artigo),
 																			substantivo(Substantivo),
 																			verbo(Verbo).
-%padrao([voce,sabia, que, _|_],['Sabia nao.']).
+
+padrao([o, voce, planeja, fazer, para, reduzir, a, emissao, de, co2, na, atmosfera, _|_],[]).
+padrao([como, o, seu, governo, trata, a, questao, da, legalização, da, maconha, _|_],[]).
+padrao([o, que, voce, tem, a, falar, sobre, a, legalizacao, do, aborto, _|_],[]).
+padrao([como, sua, administracao, planeja, atrair, investimentos, _|_],[]).
+padrao([como, seu, governo, pretende, acabar, com, o, apoio, politico, em, troca, de, favores, _|_],[]).
+padrao([qual, e, a, sua, opiniao, sobre, a, participacao, popular, no, governo, _|_][]).
+padrao([qual, e, a, sua, opiniao, sobre, a, obrigatoriedade, do, voto, _|_][]).
+padrao([voce, e, contra, ou, favor, da, reducao, da, maioridade, penal, _|_][]).
+
+padrao([voce,sabia, que, _|_],['Sabia nao.']).
