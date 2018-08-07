@@ -43,6 +43,10 @@ padrao([voce, acredita, mesmo, no, et, de, varginha, _|_],
 		E eu sei que aqui, quem não viu conhece alguém que viu, ou tem alguém na família que viu,
 		mas de qualquer jeito eu começo dizendo que esse respeito pelo ET de Varginha está garantido.']).
 
+padrao([o, voce, planeja, fazer, para, reduzir, a, emissao, de, co2, na, atmosfera, _|_],[]).
+padrao([como, o, seu, governo, trata, a, questao, da, legalização, da, maconha, _|_],[]).
+padrao([o, que, voce, tem, a, falar, sobre, a, legalizacao, do, aborto, _|_],[]).
+
 padrao([me, fala, sobre, a, autossuficiencia, do, brasil],
 		['A autossuficiencia do Brasil sempre foi insuficiente.']).
 padrao([me, fala, sobre, a, autossuficiencia, do, brasil, _|_],
@@ -59,5 +63,7 @@ padrao([me, fala, sobre, a, importancia, dos, aeroportos, no, brasil, _|_],
 
 /* Os "Voce sabia" servem como forma de aprendizado
         guardando informação no banco de padroes. */
-
-padrao([voce,sabia,_|_],['Sabia nao.']).
+padrao([voce,sabia, que, Artigo, Substantivo, Verbo, _|_],['É mesmo? Não sabia!.']) :- artigo(Artigo),
+																			substantivo(Substantivo),
+																			verbo(Verbo).
+%padrao([voce,sabia, que, _|_],['Sabia nao.']).
