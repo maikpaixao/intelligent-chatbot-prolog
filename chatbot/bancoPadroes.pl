@@ -59,7 +59,7 @@ padrao([me, fala, sobre, a, importancia, dos, aeroportos, no, brasil, _|_],
 
 /* Os "Voce sabia" servem como forma de aprendizado
         guardando informação no banco de padroes. */
-padrao([voce,sabia, que, Artigo, Substantivo, Verbo, _|_],['É mesmo? Não sabia!.']) :- artigo(Artigo),
+padrao([candidato, voce,sabia, que, Artigo, Substantivo, Verbo, _|_],['E mesmo? Nao sabia.']) :- artigo(Artigo),
 																			substantivo(Substantivo),
 																			verbo(Verbo).
 
@@ -73,3 +73,4 @@ padrao([qual, e, a, sua, opiniao, sobre, a, obrigatoriedade, do, voto, _|_][]).
 padrao([voce, e, contra, ou, favor, da, reducao, da, maioridade, penal, _|_][]).
 
 padrao([voce,sabia, que, _|_],['Sabia nao.']).
+padrao([ _,qual, sua, opiniao, sobre, a, maconha, ?],['Segundo minha memória, eu acho quesabia,que,a,maconha,faz,mal,para,a,saude.']).

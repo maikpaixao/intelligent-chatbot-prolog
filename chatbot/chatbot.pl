@@ -11,6 +11,7 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 
+:- consult('vocabulario.pl').
 :- consult('read_atomics.pl').
 :- consult('gramatica.pl').
 :- consult('bancoPadroes.pl').
@@ -24,20 +25,20 @@ remove([H|T], List2, [H|Result]) :- remove(T, List2, Result).
 
 conversar(['tchau']) :- reponder(['Ate a proxima!']).
 conversar :- nl, write('Escreva: '), read_atomics(Input), conversar(Input), !.
-conversar(Dados) :- (write(Dados), casar(['voce', 'sabia', _|_], Dicionario, Dados)
+conversar(Dados) :- (casar([_,'voce', 'sabia', 'que', Artigo, Substantivo, _|_], Dicionario, Dados)
 					->
-					write('achou\n'),
 					padrao(Estimulo, Resposta),
 					casar(Estimulo, Dicionario, Dados),
 					casar(Resposta, Dicionario, Saida),
 					Lista = Dados,
 					Lista = [X,Y|R],
+					Lista = [A,B,C,F|D],
+					write(D),
 					remove(E, [_], R),
-					write(E),
-					escrever('Sim, eu sabia que ', R),
+					write(E), write(R),
+					escrever('Segundo minha memória, eu acho que', E, Artigo, Substantivo),
 					write('Presidente: '), reponder(Saida), !, conversar
 					;
-					write('perdeu\n'),
 					padrao(Estimulo, Resposta),
 					casar(Estimulo, Dicionario, Dados),
 					casar(Resposta, Dicionario, Saida),
@@ -58,30 +59,33 @@ consultar(Index, [(Index, Valor)|_], Valor).
 consultar(Index, [(Index1, _)|Dicionario], Valor) :- \=(Index, Index1),
 													consultar(Key, Dicionario, Valor).
 
-escrever(Texto, R) :-
+escrever(Texto, R, Artigo, Substantivo) :-
 		remove(E, [_], R),
 		atomic_list_concat(R, ',', A),
 		atomic_list_concat(E, ' ', B),
         append('bancoPadroes.pl'),
 		
-		atom_concat('\npadrao([mas,voce,sabia,', A, X),
-        atom_concat(X , '],[''', Z),
+		atom_concat('\npadrao([ _,qual, sua, opiniao, sobre, ', Artigo, X),
+		atom_concat(X, ', ', U),
+		atom_concat(U, Substantivo, J),
+        atom_concat(J , ', ?],[''', Z),
 		atom_concat(Z, Texto, K),
-		atom_concat(K, B, H),
+		atom_concat(K, A, H),
         atom_concat(H, '.'']).', L),
 		write(L),
-
-		atom_concat('\npadrao([mas,voce,sabia,', A, S),
+		/*
+		atom_concat('\npadrao([_,', A, S),
         atom_concat(S , ', _|_],[''', U),
 		atom_concat(U, Texto, P),
 		atom_concat(P, A, F),
         atom_concat(F, '.'']).', V),
         write(V),
 
-		atom_concat('\npadrao([mas,voce,sabia,', A, Y),
+		atom_concat('\npadrao([_,', A, Y),
         atom_concat(Y , ', _],[''', W),
 		atom_concat(W, Texto, D),
 		atom_concat(D, A, C),
         atom_concat(C, '.'']).', M),
         write(M),
+		*/
         told.
