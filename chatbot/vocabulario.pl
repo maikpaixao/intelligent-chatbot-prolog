@@ -21,6 +21,18 @@ nome(homem).
 nome(mulher).
 nome(rapaz).
 nome(moça).
+nome(criança).
+nome(jovem).
+nome(idoso).
+nome(politico).
+nome(empresario).
+nome(medico).
+nome(cientista).
+nome(cidadao).
+nome(marginal).
+nome(trabalhador).
+nome(policial).
+
 
 preposição(de).
 preposição(com).
@@ -33,7 +45,7 @@ preposição(do).
 preposição(pela).
 preposição(num).
 preposição(aos).
-preposição(às).
+preposição(as).
 
 
 verbo(estuda).
