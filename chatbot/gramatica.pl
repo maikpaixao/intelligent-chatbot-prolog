@@ -3,7 +3,6 @@
 
 falar(X) :- oracao(X, [ ]).
 oracao(Sujeito, Predicado) :- predicado_nominal(Sujeito, Resto), predicado_verbal(Resto, Predicado).
-oracao(Sujeito, Predicado) :-.
 
 predicado_nominal([Nome | Predicado], Predicado) :- nome(Nome).
 predicado_nominal([Pronome | Predicado], Predicado) :- pronome(Pronome).
@@ -17,5 +16,3 @@ predicado_verbal([Verbo, Preposicao | Resto], Predicado) :- verbo(Verbo),
 predicado_verbal([Verbo, Adverbio | Resto], Predicado) :- verbo(Verbo),
                                                         adverbio(Adverbio),
                                                         predicado_nominal(Resto, Predicado).
-
-                                                            
