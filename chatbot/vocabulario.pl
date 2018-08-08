@@ -20,8 +20,6 @@ pronome(eles).
 nome(homem).
 nome(mulher).
 nome(rapaz).
-nome(moça).
-nome(criança).
 nome(jovem).
 nome(idoso).
 nome(politico).
@@ -34,18 +32,18 @@ nome(trabalhador).
 nome(policial).
 
 
-preposição(de).
-preposição(com).
-preposição(a).
-preposição(ate).
-preposição(das).
-preposição(dos).
-preposição(da).
-preposição(do).
-preposição(pela).
-preposição(num).
-preposição(aos).
-preposição(as).
+preposicao(de).
+preposicao(com).
+preposicao(a).
+preposicao(ate).
+preposicao(das).
+preposicao(dos).
+preposicao(da).
+preposicao(do).
+preposicao(pela).
+preposicao(num).
+preposicao(aos).
+preposicao(as).
 
 
 verbo(estuda).
@@ -94,8 +92,8 @@ adverbio(decerto).
 adverbio(certo).
 adverbio(efetivamente).
 adverbio(hoje).
-adverbio(já).
-adverbio(amanhã).
+adverbio(ja).
+adverbio(amanha).
 adverbio(futuramente).
 adverbio(imediatamente).
 adverbio(constantemente).
