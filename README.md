@@ -1,4 +1,31 @@
-# Chatbot project in Prolog
+# Chatbot utilizando Prolog
 
-### The Chatbot
-The project is composed of the file "chatbot.pl", where the main code is written along with the pattern matching features and write information in the database, the file "bancoPadroes.pl", file that contains all the input and output patterns, it contains both the previously defined patterns and the patterns created from the data provided by the user. In addition, there are the "vocabulario.pl" and "read_atomics.pl" files. The file "read_atomics.pl" is part of a code provided by the book "Natural Language Processing for Prolog Programmers", so the code has been reused in this work for productivity purposes. The file "vocabulario.pl" has a set of elements of Portuguese grammar and its main objective is to facilitate the creation of patterns recognition patterns, which can be done using only the element category as noun, verb, etc. With this it is possible to recognize a larger variety of inputs, being used as variables that can assume any value.
+A  aplicação  desenvolvida  trata-se  de  uma  chatbot  que  simula  um  candidato  à 
+presidência.  Ou  seja,  o  programa  tem  como  objetivo  receber  perguntas  de  um
+determinado usuário ou entrevistador, e a partir dessas perguntas gerar uma resposta. O 
+chatbot  consiste  na  utilização  de  casamento  de  padrões  (pattern  matching),  onde  o 
+software recebe um estímulo, ou seja, uma entrada do usuário e a partir dessa entrada ele 
+utiliza  o  casamento  de  padrões  para  verificar  se  a  entrada  corresponde  a  alguma
+estímulo previamente definido no banco da aplicação.
+
+## Atenção
+
+Para executar o chatbot siga as seguintes instruções:
+
+### 1 Baixe e extraia o .rar contendo os arquivos em um diretório reservado.
+### 2 Execute o arquivo "chatbot.pl" clicando duas vezes no arquivo.
+### 3 Digite o camando "candidato." para começar a interagir com o robô.
+
+É necessário a instalação do SWI-Prolog.
+A versão utilizada foi a 7.6.4, que já está disponibilizada como estável.
+
+## Autores
+
+* **Maik Paixão** - [Follow](https://github.com/maikpaixao/)
+* **Marcelino Chagas** - [Follow](https://github.com/maikpaixao/)
+* **Pedro Antonio** - [Follow](https://github.com/maikpaixao/)
+
+
+## Licensa
+
+Esse projeto é licenciado sob a MIT License - veja o [LICENSE.md](LICENSE.md) para mais detalhes.
