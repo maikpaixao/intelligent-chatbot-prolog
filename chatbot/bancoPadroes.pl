@@ -5,6 +5,22 @@
 padrao([bom, dia]['Bom dia!']).
 padrao([bom, dia, _]['Bom dia!']).
 
+padrao([candidato, como, voce, pretende, resolver, o, problema, da, criminalidade],
+		['Veja, esse tópico tem prioridade no meu governo, nós não vamos deixar nenhum bandido ficar impune,
+		seja ele um ladrão, um traficante ou um político. A criminalidade será combatidade pelo meu governo.']).
+
+padrao([candidato, como, voce, pretende, resolver, o, problema, da, criminalidade, _|_],
+		['Veja, esse tópico tem prioridade no meu governo, nós não vamos deixar nenhum bandido ficar impune,
+		seja ele um ladrão, um traficante ou um político. A criminalidade será combatidade pelo meu governo.']).
+
+padrao([como, voce, vai, tratar, a, questão, da, desigualdade, de, salario, entre, homens, e, mulheres],
+		['Veja bem, eu acho que não deve existir essa desigualdade de salários. Por isso meu governo vai combater
+		esse tipo de abuso ao cidadão brasileiro, não importa se homem ou mulher.']).
+
+padrao([como, voce, vai, tratar, a, questão, da, desigualdade, de, salario, entre, homens, e, mulheres, _|_],
+		['Veja bem, eu acho que não deve existir essa desigualdade de salários. Por isso meu governo vai combater
+		esse tipo de abuso ao cidadão brasileiro, não importa se homem ou mulher.']).
+
 padrao([o, que, voce, acha, sobre, o, candidato, X],
 		['Olha, eu nao quero falar sobre ', X, '. Vamos falar sobre mim.']).
 
