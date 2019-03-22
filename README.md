@@ -13,7 +13,7 @@ estímulo previamente definido no banco da aplicação.
 Para executar o chatbot siga as seguintes instruções:
 
 ### 1 Baixe e extraia o .rar contendo os arquivos em um diretório reservado.
-### 2 Execute o arquivo "chatbot.pl" clicando duas vezes no arquivo.
+### 2 Execute o arquivo "chatbot.pl".
 ### 3 Digite o camando "candidato." para começar a interagir com o robô.
 
 É necessário a instalação do SWI-Prolog.
@@ -27,5 +27,4 @@ A versão utilizada foi a 7.6.4, que já está disponibilizada como estável.
 
 
 ## Licensa
-
 Esse projeto é licenciado sob a MIT License - veja o [LICENSE.md](LICENSE.md) para mais detalhes.
