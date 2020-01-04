@@ -22,8 +22,6 @@ A versão utilizada foi a 7.6.4, que já está disponibilizada como estável.
 ## Autores
 
 * **Maik Paixão** - [Follow](https://github.com/maikpaixao/)
-* **Marcelino Chagas** - [Follow](https://github.com/maikpaixao/)
-* **Pedro Antonio** - [Follow](https://github.com/maikpaixao/)
 
 
 ## Licensa
