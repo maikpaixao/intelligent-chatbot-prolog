@@ -1,4 +1,4 @@
-# Presidential Candidate Chatbot - Prolog
+# Intelligent Chatbot - Prolog
 
 This application is a chatbot that simulates a presidential candidate. The program aims to receive questions from a user or interviewer and generate responses based on those questions. The chatbot utilizes pattern matching, where the software receives input from the user and checks if the input corresponds to any predefined patterns in the application's database.
 
@@ -28,5 +28,5 @@ To run the chatbot, you will need:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
 
