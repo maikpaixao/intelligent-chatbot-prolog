@@ -1,24 +1,32 @@
-# Chatbot utilizando Prolog
+# Presidential Candidate Chatbot - Prolog
 
-A  aplicação  desenvolvida  trata-se  de  uma  chatbot  que  simula  um  candidato  à 
-presidência.  Ou  seja,  o  programa  tem  como  objetivo  receber  perguntas  de  um
-determinado usuário ou entrevistador, e a partir dessas perguntas gerar uma resposta. O 
-chatbot  consiste  na  utilização  de  casamento  de  padrões  (pattern  matching),  onde  o 
-software recebe um estímulo, ou seja, uma entrada do usuário e a partir dessa entrada ele 
-utiliza  o  casamento  de  padrões  para  verificar  se  a  entrada  corresponde  a  alguma
-estímulo previamente definido no banco da aplicação.
+This application is a chatbot that simulates a presidential candidate. The program aims to receive questions from a user or interviewer and generate responses based on those questions. The chatbot utilizes pattern matching, where the software receives input from the user and checks if the input corresponds to any predefined patterns in the application's database.
 
-## Atenção
+## Prerequisites
 
-Para executar o chatbot siga as seguintes instruções:
+To run the chatbot, you will need:
 
-##### 1 Baixe e extraia o .rar contendo os arquivos em um diretório reservado.
-##### 2 Execute o arquivo "chatbot.pl".
-##### 3 Digite o camando "candidato." para começar a interagir com o robô.
+- [SWI-Prolog](http://www.swi-prolog.org/Download.html) (Version 7.6.4 or higher)
 
-É necessário a instalação do SWI-Prolog.
-A versão utilizada foi a 7.6.4, que já está disponibilizada como estável.
+## Installation
 
+1. Download and extract the .rar file containing the project files into a dedicated directory.
+2. Navigate to the directory where the files were extracted.
+3. Run the `chatbot.pl` file using SWI-Prolog.
 
-## Licensa
-Esse projeto é licenciado sob a MIT License - veja o [LICENSE.md](LICENSE.md) para mais detalhes.
+## Usage
+
+1. Start the chatbot by typing `candidato.` in the SWI-Prolog console.
+2. Interact with the chatbot by asking questions related to the presidential candidacy.
+
+## Connect with Me
+
+- Website: [https://www.maikpaixao.com](#)
+- Instagram: [@datamaikpaixao](#)
+- YouTube: [https://www.youtube.com/@maikpaixao](#)
+- Medium: [https://maikpaixao.medium.com](#)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
